@@ -30,6 +30,28 @@ const DocumentProcessor = () => {
   return (
     <div className="w-full space-y-8">
 
+      <Card className="cosmic-glass">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-3 text-lg">
+            <TrendingDown className="h-6 w-6 text-primary" />
+            3D Model
+          </CardTitle>
+        </CardHeader>
+
+        <CardContent className="space-y-4 text-sm">
+
+
+
+          <p className="text-muted-foreground">
+            The 3D vehicle model highlights the affected cooling system component for proactive inspection.
+          </p>
+
+          {/* ---- 3D CAR MODEL ---- */}
+          <div className="pt-4">
+            <Chatbot />
+          </div>
+        </CardContent>
+      </Card>
       {/* ================= MASTER DIAGNOSTIC CHART ================= */}
       <Card className="cosmic-glass">
         <CardHeader>
@@ -155,29 +177,7 @@ const DocumentProcessor = () => {
       </Card>
 
 
-      <Card className="cosmic-glass">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-3 text-lg">
-            <TrendingDown className="h-6 w-6 text-primary" />
-            AI Diagnostic Insight
-          </CardTitle>
-        </CardHeader>
 
-        <CardContent className="space-y-4 text-sm">
-          
-
-  
-          <p className="text-muted-foreground">
-            Recommendation: Proactive coolant inspection within next service
-            cycle.
-          </p>
-
-          {/* ---- 3D CAR MODEL ---- */}
-          <div className="pt-4">
-            <Chatbot />
-          </div>
-        </CardContent>
-      </Card>
 
     </div>
 
