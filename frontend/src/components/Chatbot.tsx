@@ -2,22 +2,46 @@ const Chatbot = () => {
   return (
     <div
       style={{
-        padding: "20px",
-        color: "#22c55e",
+        padding: "0",
         borderRadius: "8px",
+        width: "100%",
+        height: "420px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
       }}
     >
-  
-      <img
-        src="/images/car.png"
-        alt="Car model"
+      {/* Car Image */}
+      <div
         style={{
-          width: "100%",
-          maxHeight: "2000px",
-          objectFit: "contain",
-          opacity: 0.9,
+          flex: 1,
+          overflow: "hidden",
         }}
-      />
+      >
+        <img
+          src="/images/car3.png"
+          alt="Car model"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            transform: "scale(1.15)",
+            opacity: 0.95,
+          }}
+        />
+      </div>
+
+      {/* Bottom Text */}
+      <div
+        style={{
+          marginTop: "8px",
+          fontSize: "14px",
+          color: "#22c55e",
+          textAlign: "center",
+        }}
+      >
+        Recommendation: Proactive coolant inspection within next service cycle.
+      </div>
     </div>
   );
 };
