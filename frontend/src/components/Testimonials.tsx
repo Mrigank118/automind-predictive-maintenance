@@ -5,7 +5,7 @@ const MeetTheTeam = () => {
     {
       name: "Mrigank Singh",
       position: "Developer",
-      avatar: "/images/mrigank_icon.jpg", // Correct image path
+      avatar: "/images/mrigank_icon.jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/mrigank-singh",
         github: "https://github.com/mrigank118"
@@ -14,7 +14,7 @@ const MeetTheTeam = () => {
     {
       name: "Ritika Jain",
       position: "Developer",
-      avatar: "/images/ritika_icon.jpg", // Correct image path
+      avatar: "/images/ritika_icon.jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/ritika-jain",
         github: "https://github.com/ritika-jain"
@@ -23,10 +23,28 @@ const MeetTheTeam = () => {
     {
       name: "Narendra Singh",
       position: "Developer",
-      avatar: "/images/narendra_icon.jpg", // Correct image path
+      avatar: "/images/narendra_icon.jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/narendra-singh",
         github: "https://github.com/narendra-singh"
+      }
+    },
+    {
+      name: "Sarthak",
+      position: "Developer",
+      avatar: null,
+      socials: {
+        linkedin: "",
+        github: ""
+      }
+    },
+    {
+      name: "Pragyan",
+      position: "Developer",
+      avatar: null,
+      socials: {
+        linkedin: "",
+        github: ""
       }
     }
   ];
@@ -39,27 +57,60 @@ const MeetTheTeam = () => {
             Meet the Team
           </h2>
           <p className="text-lg text-muted-foreground">
-            Get to know the minds behind the innovation
+            The engineers building AutoMind AI
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="p-6 rounded-xl border border-border bg-background/80">
-              <div className="h-12 w-12 rounded-full overflow-hidden">
-                <img src={member.avatar} alt={`${member.name} avatar`} className="h-full w-full object-cover" />
+            <div
+              key={index}
+              className="p-6 rounded-xl border border-border bg-background/80 hover:border-blue-500/40 transition-colors"
+            >
+              {/* Avatar */}
+              <div className="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center bg-muted">
+                {member.avatar ? (
+                  <img
+                    src={member.avatar}
+                    alt={`${member.name} avatar`}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <span className="text-sm font-semibold text-blue-500">
+                    {member.name.charAt(0)}
+                  </span>
+                )}
               </div>
+
               <div className="mt-4">
-                <h4 className="font-medium text-foreground">{member.name}</h4>
-                <p className="text-sm text-orange-500">{member.position}</p> {/* Apply orange text to position */}
-                <div className="flex gap-4 mt-2">
+                <h4 className="font-medium text-foreground">
+                  {member.name}
+                </h4>
+
+                {/* Position */}
+                <p className="text-sm text-blue-500">
+                  {member.position}
+                </p>
+
+                {/* Socials */}
+                <div className="flex gap-4 mt-2 text-sm">
                   {member.socials.linkedin && (
-                    <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={member.socials.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-blue-500 transition-colors"
+                    >
                       LinkedIn
                     </a>
                   )}
                   {member.socials.github && (
-                    <a href={member.socials.github} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={member.socials.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-blue-500 transition-colors"
+                    >
                       GitHub
                     </a>
                   )}

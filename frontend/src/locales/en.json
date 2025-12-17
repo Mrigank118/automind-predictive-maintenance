@@ -63,42 +63,43 @@
     }
   },
   "featuresSection": {
-    "title": "Powerful Features for Insurance Clarity",
-    "subtitle": "Advanced AI tools to help you understand insurance policies quickly and make informed decisions",
-    "learnMore": "Learn more →",
-    "featuresList": [
-      {
-        "title": "AI Document Analysis",
-        "description": "Upload insurance policies and get instant AI-powered analysis and summaries.",
-        "expandedDescription": "Our advanced AI processes complex insurance documents in seconds, extracting key information and creating easy-to-understand summaries. Upload PDFs, DOCs, or text files and get comprehensive analysis including coverage details, exclusions, and important terms."
-      },
-      {
-        "title": "Risk Clause Detection",
-        "description": "Automatically identify and highlight high-risk clauses in your insurance policies.",
-        "expandedDescription": "TLDR scans your documents for potentially problematic clauses, categorizing them by risk level. High-risk clauses are highlighted in red, moderate-risk in orange, with detailed explanations of why each clause matters to you personally."
-      },
-      {
-        "title": "Interactive AI Chatbot",
-        "description": "Ask specific questions about your policy and get instant, accurate answers.",
-        "expandedDescription": "Chat with TLDR about your uploaded documents. Ask questions like 'Does this cover cancer treatments?' or 'What's my deductible?' and get clear, contextual answers based on your specific policy terms."
-      },
-      {
-        "title": "Executive Summaries",
-        "description": "Transform dense legal language into clear, digestible summaries.",
-        "expandedDescription": "Never struggle with complex insurance jargon again. Our AI creates concise executive summaries that highlight key benefits, coverage limits, deductibles, and important policy details in plain English."
-      },
-      {
-        "title": "Downloadable Reports",
-        "description": "Generate comprehensive risk analysis reports for your records.",
-        "expandedDescription": "Download detailed PDF reports containing your policy summary, highlighted clauses, risk assessments, and explanations. Perfect for sharing with family members, financial advisors, or keeping for your records."
-      },
-      {
-        "title": "Multi-Format Support",
-        "description": "Upload documents in various formats including PDF, DOC, and TXT files.",
-        "expandedDescription": "TLDR supports all major document formats. Whether your insurance policy is a PDF from your provider, a Word document, or plain text, our platform can analyze it and provide comprehensive insights."
-      }
-    ]
-  }
+  "title": "Key Capabilities",
+  "subtitle": "Agentic AI capabilities powering predictive vehicle maintenance and intelligent decision-making",
+  "learnMore": "Learn more →",
+  "featuresList": [
+    {
+      "title": "Predictive Failure Detection",
+      "description": "Detect vehicle component failures before they occur using AI.",
+      "expandedDescription": "Isolation Forest–based anomaly detection continuously analyzes multi-sensor data such as engine temperature, RPM, vibration, and battery voltage to identify early signs of failure and reduce unplanned downtime."
+    },
+    {
+      "title": "AI Digital Twin",
+      "description": "Every vehicle is mirrored by an intelligent digital twin.",
+      "expandedDescription": "Each vehicle has a continuously updating digital twin that simulates health, stress, and failure scenarios using live (simulated) telemetry data."
+    },
+    {
+      "title": "Agentic AI Orchestration",
+      "description": "Autonomous AI agents collaborate to diagnose and act.",
+      "expandedDescription": "A Master Agent coordinates multiple worker agents for data analysis, diagnosis, customer engagement, scheduling, and reporting using a multi-agent Autogen architecture."
+    },
+    {
+      "title": "Autonomous Service Scheduling",
+      "description": "Proactively schedules vehicle service with minimal user input.",
+      "expandedDescription": "Once a fault is detected and confirmed, the Scheduling Agent automatically recommends and books the nearest available service slot through a mock service API."
+    },
+    {
+      "title": "Manufacturing Feedback Loop",
+      "description": "Failure insights flow back to manufacturing teams.",
+      "expandedDescription": "Repeated fault patterns across vehicles are aggregated to generate RCA and CAPA insights, helping manufacturers improve design quality and long-term reliability."
+    },
+    {
+      "title": "UEBA Security Monitoring",
+      "description": "Monitors AI behavior for security and compliance.",
+      "expandedDescription": "A dedicated UEBA agent continuously tracks all AI actions, flags anomalous behavior, and ensures secure and compliant autonomous decision-making."
+    }
+  ]
+}
+
 }
 
 

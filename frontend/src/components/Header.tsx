@@ -40,7 +40,7 @@ const Header = () => {
     <div className="sticky top-0 z-50 pt-10 px-6 bg-background/80">
       <header className="w-full max-w-7xl mx-auto py-4 px-6 md:px-8 flex items-center justify-between">
         <div className="p-4">
-          <Logo />
+          <Logo /> 
         </div>
 
         <button
